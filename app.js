@@ -28,3 +28,6 @@ app.use("/api/v1/task", taskrouter);
 
 app.use(errorMiddleware)
 
+app.get("/",(req,res)=>{
+    res.send("nice working")
+})
